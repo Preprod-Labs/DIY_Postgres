@@ -15,7 +15,7 @@
 # Dependency: 
     # Environment:     
         #Python 3.10.13 -> pip install 
-        #redis 5.0.7 -> pip install redis
+        #psycopg2-binary 2.9.9 -> pip install psycopg2-binary 
         #Pandas 2.2.1 -> pip install Pandas==2.2.1
 
 # Import Libraries

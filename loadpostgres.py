@@ -15,7 +15,7 @@
 # Dependency: 
     # Environment:     
         #Python 3.10.13 -> pip install 
-        #redis 5.0.7 -> pip install redis
+        #psycopg2-binary 2.9.9 -> pip install psycopg2-binary 
         #Pandas 2.2.1 -> pip install Pandas==2.2.1
 
 # Import Libraries
@@ -45,7 +45,7 @@ INSERT INTO CarData (Car_Make,Country,Country_Code)
 VALUES (%s,%s,%s)
 """
 
-# Iterate through each row in the CSV data (replace with your logic)
+# Iterate through each row in the CSV data
 for row in df.to_records(index=False):  # Assuming using pandas
     cur.execute(sql, row)
 
